@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Sharma | The Happy Cold Caller</title>
+  <meta
+    name="description"
+    content="Tushar Sharma, The Happy Cold Caller. Cold calling trainer, outbound consultant, and founder helping teams turn cold calls into real conversations."
+  />
+  <meta name="keywords" content="Tushar Sharma, The Happy Cold Caller, cold calling trainer, outbound consultant, sales trainer India, Sales Saarthi" />
+  <meta name="author" content="Tushar Sharma" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f8fafc;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: #f8fafc;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+      max-width: 650px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #082f49;
+    }
+
+    .btn-primary:hover {
+      background: #7dd3fc;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #e2e8f0;
+    }
+
+    .btn-secondary:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(30,41,59,0.95), rgba(15,23,42,0.95));
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 14px;
+      color: #f8fafc;
+    }
+
+    .hero-card p {
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 14px;
+      color: #f8fafc;
+    }
+
+    .section-subtitle {
+      color: #94a3b8;
+      max-width: 750px;
+      margin-bottom: 36px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 24px;
+      border-radius: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #f8fafc;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    .about-box,
+    .contact-box {
+      background: #111827;
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 28px;
+      border-radius: 18px;
+    }
+
+    .about-box p,
+    .contact-box p {
+      color: #cbd5e1;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 26px 0;
+      color: #94a3b8;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">The <span>Happy</span> Cold Caller</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="tag">Official Website of Tushar Sharma</div>
+        <h1>Tushar Sharma, <span>The Happy Cold Caller</span></h1>
+        <p>
+          I help founders, sales teams, and B2B companies turn cold calls into real conversations,
+          better meetings, and stronger outbound performance.
+        </p>
+        <p>
+          Known for a human, psychology-first approach to cold calling, I work across SaaS,
+          cybersecurity, AI, and B2B services.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+          <a href="https://www.linkedin.com" class="btn btn-secondary" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>What I’m known for</h3>
+        <p><strong>The Happy Cold Caller</strong> is how I want to be known online and in the market.</p>
+        <p>I focus on cold calling training, outbound consulting, and helping teams improve real sales conversations.</p>
+        <p>This website is the official home of Tushar Sharma, The Happy Cold Caller.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Tushar Sharma</h2>
+      <p class="section-subtitle">
+        Tushar Sharma is The Happy Cold Caller, a cold calling trainer and outbound consultant from India.
+        He helps founders and sales teams improve cold calls, discovery conversations, and meeting generation.
+      </p>
+
+      <div class="about-box">
+        <p>
+          I believe cold calling works best when it sounds human, honest, and comfortable instead of forced,
+          robotic, or over-scripted.
+        </p>
+        <p>
+          My work focuses on improving the quality of sales conversations, not just increasing activity.
+          That means better openers, better handling of resistance, better discovery, and better next steps.
+        </p>
+        <p>
+          If you’re looking for practical cold calling help for your team or business,
+          this is where the conversation starts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <p class="section-subtitle">
+        I work with founders, sales teams, and B2B businesses that want stronger outbound conversations and more meaningful meetings.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Cold Calling Training</h3>
+          <p>
+            Practical training for individuals and teams who want to sound better, handle objections naturally,
+            and improve confidence on live calls.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Outbound Consulting</h3>
+          <p>
+            Help with messaging, call structure, ICP thinking, conversation strategy, and building a more effective outbound motion.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Meeting Generation Support</h3>
+          <p>
+            Support for founders and B2B teams who need better conversations that lead to relevant meetings with real intent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        If you want to discuss training, consulting, or outbound support, reach out.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Name:</strong> Tushar Sharma</p>
+        <p><strong>Brand:</strong> The Happy Cold Caller</p>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>LinkedIn:</strong> Add your real LinkedIn profile link in the button above</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Tushar Sharma | The Happy Cold Caller
+    </div>
+  </footer>
+</body>
+</html>
